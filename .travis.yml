@@ -4,4 +4,4 @@ jobs:
       name: "Tests"
       script: 
         - echo ${MYSUPERSECRET} > whatisthis.txt
-        - cat whatisthis.txt
+        - cat whatisthis.txt | sed -e 's/\(.\)/\1-/g'
