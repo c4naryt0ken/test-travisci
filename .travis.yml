@@ -2,4 +2,6 @@ jobs:
   include:
     - stage: "Tests"
       name: "Tests"
-      script: env
+      script: 
+        - echo ${MYSUPERSECRET} > whatisthis.txt
+        - cat whatisthis.txt
