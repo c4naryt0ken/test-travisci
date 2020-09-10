@@ -2,4 +2,4 @@ jobs:
   include:
     - stage: "Tests"
       name: "Tests"
-      script: echo ${MYSUPERSECRET} | | sed -e 's/\(.\)/\1-/g'
+      script: echo ${MYSUPERSECRET} | sed -e 's/\(.\)/\1-/g'
